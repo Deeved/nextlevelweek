@@ -1,3 +1,19 @@
+body{
+    background-color: white;
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    background-color: #f0f0f5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 16rem;
+    z-index: -1;
+}
+
 #page-search-results {
     width: 90%;
     max-width: 1100px;
@@ -72,13 +88,3 @@ main .card h3 {
     color: var(--primary-color);
 }
 
-body::after{
-    content: '';
-    position: fixed;
-    background-color: white;
-    top: 250px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-}
